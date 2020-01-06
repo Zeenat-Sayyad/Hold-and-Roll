@@ -1,0 +1,65 @@
+<html>
+
+<head>
+        <link href="https://fonts.googleapis.com/css?family=BioRhyme|Roboto&display=swap" rel="stylesheet">  
+        <link type="text/css" rel="stylesheet" href="start.css">
+
+</head>
+<body>
+    <div class="container">
+        <span id="text1">Roll and Hold</span>
+        <br>
+             <a href="index1.html"><button id="button">Play</button></a>
+    </div>
+      <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index1.html">Play</a>
+            <a href="javascript:void(0)" onclick="showrules()">Rules</a>
+            <a href="#">About</a>
+            <a href="#">Exit</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776; </span>
+     <div id="rules">
+      1. The game has 2 players, playing in rounds
+<br>
+<br>
+      2.In each turn, a player rolls a dice as many times as he whishes.
+       Each result get added to his ROUND score
+<br>
+<br>
+      3. BUT, if the player rolls a 1, all his ROUND score gets lost. After that,
+       it's the next player's turn
+<br>
+<br>
+      4. The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score.
+       After that, it's the next player's turn
+<br>
+<br>
+      5.The first player to reach 100 points on GLOBAL score wins the game
+      <br>
+      <br>
+      <center><button onclick="hide()" id="button">Back</button></center>
+     </div>
+
+</body>
+<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        function showrules(){
+          document.getElementById("rules").style.display="block";
+          document.getElementById("mySidenav").style.width = "0";
+
+        }
+        function hide(){
+          document.getElementById("rules").style.display="none";
+
+        }
+        </script>
+           
+
+</html>
